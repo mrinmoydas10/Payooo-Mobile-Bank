@@ -8,7 +8,7 @@ document.getElementById('login-btn').addEventListener('click', function(event){
     if(accountNumber.length === 11){
         // console.log('yes');
         if(pinNumber === '1234'){
-            window.location.href="/main.html";
+            window.location.href= "./main.html";
         }
         else{
             alert('Need a Valid Pin');
