@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-slate-800">
+
+    <section class="max-w-md min-h-screen mx-auto py-6 bg-gray-200">
+
+        <header>
+            <nav class="flex justify-around items-center">
+                <img class="" src="assets/Group.png" alt="">
+                <div>
+                    <h1 class="text-3xl font-bold">$<span id="main-balance">45000</span></h1>
+                    <p class="border rounded p-1">Available Balance</p>
+
+                </div>
+                <button class="btn">Logout</button>
+            </nav>
+            <section class="mt-10">
+                <h1 class="text-2xl font-bold mb-2 text-center">🔥 Welcome to Payooo!</h1>
+                <p class="text-center pl-5 pr-5">Enjoy easy and convenient financial services with us. Cashout charge is
+                    low and </p>
+
+                <div class="cards grid grid-cols-3 mt-5 gap-3 p-2">
+                    <div id="add-money-box" class="box border p-4 text-center rounded-sm cursor-pointer hover:bg-sky-700">
+                        <img class="w-8 mx-auto" src="assets/wallet1.png" alt="">
+                        <h3>Add Money</h3>
+                    </div>
+
+
+
+
+                    <div id="cash-out-box" class="box border p-4 text-center rounded-sm hover:bg-sky-700">
+                        <img class="w-8 mx-auto" src="assets/send1.png" alt="">
+                        <h3>Cashout</h3>
+                    </div>
+
+
+
+
+                    <div class="box border p-4 text-center rounded-sm">
+                        <img class="w-8 mx-auto" src="assets/money1.png" alt="">
+                        <h3>Transfer Money</h3>
+                    </div>
+
+
+
+
+                    <div class="box border p-4 text-center rounded-sm">
+                        <img class="w-8 mx-auto" src="assets/bonus1.png" alt="">
+                        <h3>Get Bonus</h3>
+                    </div>
+
+
+
+
+                    <div class="box border p-4 text-center rounded-sm">
+                        <img class="w-8 mx-auto" src="assets/purse1.png" alt="">
+                        <h3>Pay Bill</h3>
+                    </div>
+
+
+
+
+                    <div class="box border p-4 text-center rounded-sm">
+                        <img class="w-8 mx-auto" src="assets/transaction1.png" alt="">
+                        <h3>Transaction</h3>
+                    </div>
+                </div>
+
+                <section class="" id="addmoney">
+                    <h2 class="font-bold ml-5 mt-5 ">Add Money</h2>
+
+                    <div class="">
+                        <div class="hero-content flex-col lg:flex-row-reverse">
+
+                            <div class="card w-full max-w-sm shrink-0 shadow-2xl">
+                                <div class="card-body">
+                                    <legend class="text-black font-bold">Select E-Wallet</legend>
+                                    <select class="select">
+                                        <option disabled selected>Select E-Wallet</option>
+                                        <option value="BKash">BKash</option>
+                                        <option value="Nagad">Nagad</option>
+                                        <option value="Rocket">Rocket</option>
+                                    </select>
+                                    <fieldset class="fieldset">
+                                        <label class="label text-black font-bold">Account Number</label>
+                                        <input id="account-number" type="number" class="input"
+                                            placeholder="Enter Your Number" required />
+
+
+                                            <label class="label text-black font-bold">Amount</label>
+                                        <input id="amount-number" type="number" class="input"
+                                            placeholder="Enter Amount" required />
+
+
+
+
+                                        <label class="label text-black font-bold">4 Digit Pin</label>
+                                        <input id="pin-number" type="password" class="input"
+                                            placeholder="Enter 4 Digit Pin" required />
+
+                                        <button id="add-money"
+                                            class="btn btn-neutral bg-blue-600 mt-4 rounded-full border-none">Add
+                                            Money</button>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+            </section>
+        </header>
+
+
+        <section id="cashout">
+
+            <h2 class="font-bold ml-5 mt-5 ">Cashout</h2>
+
+                    <div class="">
+                        <div class="hero-content flex-col lg:flex-row-reverse">
+
+                            <div class="card w-full max-w-sm shrink-0 shadow-2xl">
+                                <div class="card-body">
+                                   
+                                    <fieldset class="fieldset">
+                                        <label class="label text-black font-bold">Agent Number</label>
+                                        <input id="account-number" type="number" class="input"
+                                            placeholder="Enter Agent Number" required />
+
+
+                                            <label class="label text-black font-bold">Amount</label>
+                                        <input id="cashout-amount" type="number" class="input"
+                                            placeholder="Enter Amount" required />
+
+
+
+
+                                        <label class="label text-black font-bold">4 Digit Pin</label>
+                                        <input id="cashout-pin" type="password" class="input"
+                                            placeholder="Enter 4 Digit Pin" required />
+
+                                        <button id="cash-out"
+                                            class="btn btn-neutral bg-blue-600 mt-4 rounded-full border-none">Cashout</button>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+        </section>
+    </section>
+
+
+    <script src="script/addmoney.js"></script>
+    <script src="script/toggle.js"></script>
+    <script src="script/cashout.js"></script>
+
+</body>
+
+</html>
